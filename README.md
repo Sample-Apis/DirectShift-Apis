@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Go to project root repository
+2. Run `bundle install`
+3. Edit credentials.tml.enc (Editor can be either nano, vi or vim) 
+   `EDITOR="nano" rails credentials:edit`
 
-Things you may want to cover:
+4. Add credentials for developement env
 
-* Ruby version
+    	development:
 
-* System dependencies
+       	db_username: your_postgres_username
 
-* Configuration
+       	db_password: your_postgres_password
 
-* Database creation
+       	api_token: your_api_token_to_authenticate_signup_login_apis
+				
 
-* Database initialization
+5. Create database for application
+   `rails db:create`
+6. Start the server
+   `rails s`
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
